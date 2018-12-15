@@ -13,18 +13,27 @@ In the developed strategy, foraging behavior of FFSS based animals (e.g. spider 
 2. Calculate fitness (i.e. the distance of individuals from food sources).
 3. Select global leader and local leaders by applying greedy selection. 
 **while** (Termination criteria is not satisfied) **do** 
-(i)	For finding the objective (Food Source), generate the new positions for all the group members by using self experience, local leader experience and group members experience. 
+
+(i)	For finding the objective (Food Source), generate the new positions for all the group members by using self experience, local leader experience and group members experience.
+
 (ii)	Apply the greedy selection process for all the group members based on their fitness;
+
 (iii)	Calculate the fitness probability for all the group members. 
+
 (iv)	Produce new positions for the all the group members, selected based on the fitness probability, by using self experience, global leader experience and group members’ experiences.
+
 (v)	Update the position of local and global leaders, by applying the greedy selection process on all the groups.
+
 (vi)	If any Local group leader is not updating her position after a specified number of times (LocalLeaderLimit) then re-direct all members of that particular group for foraging.
+
 (vii)	If Global Leader is not updating her position for a specified number of times (GlobalLeaderLimit) then she divides the group into smaller groups. 
+
 **end while**
 
 
 # SMO-in-python
 Python code of Spider-Monkey Optimization (SMO)
+
 Coded by: Mukesh Saraswat (emailid: saraswatmukesh@gmail.com), Himanshu Mittal (emailid: himanshu.mittal224@gmail.com) and Raju Pal (emailid: raju3131.pal@gmail.com)
 
 Reference: Jagdish Chand Bansal, Harish Sharma, Shimpi Singh Jadon, and Maurice Clerc. "Spider monkey optimization algorithm for numerical optimization." Memetic computing 6, no. 1, 31-47, 2014.
@@ -37,4 +46,5 @@ The code template used is similar to code given at link: https://github.com/hima
 This code is available for non-commercial purposes. We would appreciate an acknowledgment if you use it in your work.
 
 * Command to run:
+
 	python Main.py
