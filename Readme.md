@@ -28,7 +28,7 @@ while (Termination criteria is not satisfied) do
 end while
 </pre>
  
-# SMO-in-python
+# SMO-in-Python
 Python code of Spider-Monkey Optimization (SMO)
 
 Coded by: Mukesh Saraswat (emailid: saraswatmukesh@gmail.com), Himanshu Mittal (emailid: himanshu.mittal224@gmail.com) and Raju Pal (emailid: raju3131.pal@gmail.com)
