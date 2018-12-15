@@ -15,16 +15,16 @@ In the developed strategy, foraging behavior of FFSS based animals (e.g. spider 
 3. Select global leader and local leaders by applying greedy selection. 
 while (Termination criteria is not satisfied) do
 &nbsp;&nbsp;* For finding the objective (Food Source), generate the new positions for all the group members by using  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self experience, local leader experience and group members experience.
+&nbsp;&nbsp;&nbsp;&nbsp;self experience, local leader experience and group members experience.
 &nbsp;&nbsp;* Apply the greedy selection process for all the group members based on their fitness.
 &nbsp;&nbsp;* Calculate the fitness probability for all the group members. 
 &nbsp;&nbsp;* Produce new positions for the all the group members, selected based on the fitness probability, by using
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self experience, global leader experience and group members’ experiences.
+&nbsp;&nbsp;&nbsp;&nbsp;self experience, global leader experience and group members’ experiences.
 &nbsp;&nbsp;* Update the position of local and global leaders, by applying the greedy selection process on all the groups.
 &nbsp;&nbsp;* If any Local group leader is not updating her position after a specified number of times (LocalLeaderLimit) 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; then re-direct all members of that particular group for foraging.
+&nbsp;&nbsp;&nbsp;&nbsp; then re-direct all members of that particular group for foraging.
 &nbsp;&nbsp;* If Global Leader is not updating her position for a specified number of times (GlobalLeaderLimit) then
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;she divides the group into smaller groups. 
+&nbsp;&nbsp;&nbsp;&nbsp;she divides the group into smaller groups. 
 end while
 </pre>
  
