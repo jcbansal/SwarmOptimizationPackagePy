@@ -14,7 +14,9 @@ In the developed strategy, foraging behavior of FFSS based animals (e.g. spider 
 2. Calculate fitness (i.e. the distance of individuals from food sources).
 3. Select global leader and local leaders by applying greedy selection. 
 **while** (Termination criteria is not satisfied) **do** 
-&nbsp;&nbsp;(i)	For finding the objective (Food Source), generate the new positions for all the group members by using self experience, local leader experience and group members experience.
+&nbsp;&nbsp;(i)	For finding the objective (Food Source), generate the new positions 
+&nbsp;&nbsp;&nbsp;for all the group members by using self experience, local leader experience 
+&nbsp;&nbsp;&nbsp;and group members experience.
 &nbsp;&nbsp;(ii) Apply the greedy selection process for all the group members based on their fitness;
 &nbsp;&nbsp;(iii) Calculate the fitness probability for all the group members. 
 &nbsp;&nbsp;(iv) Produce new positions for the all the group members, selected based on the fitness probability, by using self experience, global leader experience and group members’ experiences.
