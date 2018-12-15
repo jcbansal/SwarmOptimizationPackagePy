@@ -8,29 +8,21 @@ Social behavior of spider monkeys inspired authors to develop an stochastic opti
 
 In the developed strategy, foraging behavior of FFSS based animals (e.g. spider monkeys) is divided into four steps. First, the group starts food foraging and evaluates their distances from the food. In the second step, based on the distance from the foods, group members update their positions and again evaluate distance from the food sources. Furthermore, in the third step, local leader updates its best position within the group and if the position is not updated for a specified number of times then all members of that group start searching of the foods in different directions. Next, in the fourth step, global leader, updates its ever best position and in case of stagnation, it splits the group into smaller size subgroups. All the four steps, mentioned aforesaid, are continuously executed until the desired output is achieved. There are two important control parameters necessary to introduce in the proposed strategy, one is GlobalLeaderLimit and another is LocalLeaderLimit which help local and global leaders to take appropriate decisions.
 
-**Algorithm**
+#### Algorithm
+<pre>
 1. Initialize Population, LocalLeaderLimit, GlobalLeaderLimit, pr.
 2. Calculate fitness (i.e. the distance of individuals from food sources).
 3. Select global leader and local leaders by applying greedy selection. 
-
 **while** (Termination criteria is not satisfied) **do** 
-
-(i)	For finding the objective (Food Source), generate the new positions for all the group members by using self experience, local leader experience and group members experience.
-
-(ii)	Apply the greedy selection process for all the group members based on their fitness;
-
-(iii)	Calculate the fitness probability for all the group members. 
-
-(iv)	Produce new positions for the all the group members, selected based on the fitness probability, by using self experience, global leader experience and group members’ experiences.
-
-(v)	Update the position of local and global leaders, by applying the greedy selection process on all the groups.
-
-(vi)	If any Local group leader is not updating her position after a specified number of times (LocalLeaderLimit) then re-direct all members of that particular group for foraging.
-
-(vii)	If Global Leader is not updating her position for a specified number of times (GlobalLeaderLimit) then she divides the group into smaller groups. 
-
+&nbsp;&nbsp;(i)	For finding the objective (Food Source), generate the new positions for all the group members by using self experience, local leader experience and group members experience.
+&nbsp;&nbsp;(ii) Apply the greedy selection process for all the group members based on their fitness;
+&nbsp;&nbsp;(iii) Calculate the fitness probability for all the group members. 
+&nbsp;&nbsp;(iv) Produce new positions for the all the group members, selected based on the fitness probability, by using self experience, global leader experience and group members’ experiences.
+&nbsp;&nbsp;(v)	Update the position of local and global leaders, by applying the greedy selection process on all the groups.
+&nbsp;&nbsp;(vi) If any Local group leader is not updating her position after a specified number of times (LocalLeaderLimit) then re-direct all members of that particular group for foraging.
+&nbsp;&nbsp;(vii) If Global Leader is not updating her position for a specified number of times (GlobalLeaderLimit) then she divides the group into smaller groups. 
 **end while**
-
+</pre>
 
 # SMO-in-python
 Python code of Spider-Monkey Optimization (SMO)
