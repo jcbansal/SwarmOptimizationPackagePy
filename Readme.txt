@@ -1,4 +1,4 @@
-SPIDER MONKEY OPTIMIZATION
+#SPIDER MONKEY OPTIMIZATION
 
 Social behavior of spider monkeys inspired authors to develop an stochastic optimization technique that mimics the foraging behavior of spider monkeys. The foraging behavior of spider monkeys shows that these monkeys fall in the category of fission-fusion social structure (FFSS) based animals. Thus the proposed optimization algorithm, which is based on foraging behavior of spider monkeys, can be explained better in terms of FFSS. Following are the key features of the FFSS.
 1.	The fission-fusion social structure based animals are social and live in groups of 40-50 individuals. The FFSS of swarm may reduce the foraging competition among group members by dividing them into sub-groups in order to search food.
